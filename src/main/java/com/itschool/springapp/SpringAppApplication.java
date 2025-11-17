@@ -11,10 +11,10 @@ import java.io.FileOutputStream;
 import com.itextpdf.text.Document;
 
 @SpringBootApplication
-public class SpringappApplication {
+public class SpringAppApplication {
 
 	public static void main(String[] args) throws FileNotFoundException, DocumentException {
-		SpringApplication.run(SpringappApplication.class, args);
+		SpringApplication.run(SpringAppApplication.class, args);
 		System.out.println("Hello");
 
 		Document document = new Document();
