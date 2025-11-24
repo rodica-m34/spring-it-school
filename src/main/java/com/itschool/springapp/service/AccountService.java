@@ -1,6 +1,9 @@
 package com.itschool.springapp.service;
 
+import java.util.List;
+
 public interface AccountService {
-    String getAccount (String email);
-    String postAccount ();
+    Account getAccount (String lastName);
+    Account createAccount (Account account);
+    List<Account> getAccounts ();
 }

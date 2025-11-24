@@ -10,10 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SalutGreetingController {
 
-    @Qualifier("Salut")
     private final GreetingService greetingService;
 
-    public SalutGreetingController(@Qualifier("Salut") GreetingService greetingService) {
+    public SalutGreetingController(@Qualifier("salut") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
