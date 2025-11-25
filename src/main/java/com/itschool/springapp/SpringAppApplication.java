@@ -15,15 +15,6 @@ public class SpringAppApplication {
 
 	public static void main(String[] args) throws FileNotFoundException, DocumentException {
 		SpringApplication.run(SpringAppApplication.class, args);
-		System.out.println("Hello");
-
-		Document document = new Document();
-		PdfWriter.getInstance(document,new FileOutputStream("myFirstPdfFromJava.pdf"));
-		document.open();
-
-		Chunk chunk = new Chunk("Salut, ma numesc Rodica!");
-		document.add(chunk);
-		document.close();
 	}
 
 }
