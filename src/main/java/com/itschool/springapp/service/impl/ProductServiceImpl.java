@@ -31,9 +31,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDTO> findByCategory(String category) {
-        List<Product> productsByCategory = productRepository.findAll();
-        return productsByCategory.stream().
-                filter(p -> p.getCategory().equals(category)).map(this::toProductDTO).toList();
+        List<Product> productsByCategory = productRepository.findByCategory(category);
+        return productsByCategory.stream().map(this::toProductDTO).toList();
     }
 
     @Override
